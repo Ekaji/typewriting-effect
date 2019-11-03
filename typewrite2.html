@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="type.css">
+    </head>
+    <body>
+      
+    	 <p id="demo"></p>
+        <script>
+            let text = "hello! my name is Ekaji Onah i am a web developer, And i am participating in the #100daysofcodechallenge.";
+        
+			let i = 0;
+			let speed = 150;
+
+			function typewrite(){
+   				 if(i < text.length){ document.getElementById("demo").innerHTML += text.charAt(i);
+       				i++;
+       		if(i >= text.length){
+       			i = 0;
+       	document.getElementById("demo").innerHTML = text.charAt(i);
+       			i++
+       		}
+    	setTimeout(typewrite, speed);	 
+    }
+}
+typewrite();
+// 
+        </script>
+      
+    </body>
+</html>
